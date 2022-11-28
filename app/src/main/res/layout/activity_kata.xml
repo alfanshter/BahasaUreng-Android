@@ -10,11 +10,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg"
-        tools:context=".ui.home.HomeFragment">
+        android:background="@drawable/bgkuis"
+        tools:context=".ui.quiz.activity.KataActivity">
 
 
         <RelativeLayout
+            android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#44FFFFFF"
@@ -24,12 +25,12 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/btnmenu"
+                android:id="@+id/btnback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15sp"
-                android:background="@drawable/btnmenu" />
+                android:background="@drawable/btnback" />
 
             <TextView
                 android:id="@+id/txthome"
@@ -42,41 +43,45 @@
                 android:textSize="20sp" />
         </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/text_home"
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmergambar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8sp"
-            android:layout_marginTop="8sp"
-            android:layout_marginEnd="8sp"
-            android:background="@drawable/txtselamat"
-            android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.32" />
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            app:layout_constraintVertical_bias="0.20"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="radial">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <include layout="@layout/imageshimmer" />
+
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:src="@drawable/logomaluku"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_home" />
-
-        <ImageButton
-            android:id="@+id/btnkeluar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btnkeluar"
+            android:id="@+id/imgkata"
+            android:layout_width="271sp"
+            android:layout_height="141sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.13" />
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            app:layout_constraintVertical_bias="0.20"
+
+            />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
