@@ -7,7 +7,6 @@ import androidx.core.view.GravityCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,7 @@ import android.view.ViewGroup;
 import com.liamahu.bahasaureng.MainActivity;
 import com.liamahu.bahasaureng.R;
 import com.liamahu.bahasaureng.databinding.FragmentQuizBinding;
-import com.liamahu.bahasaureng.ui.quiz.activity.KataActivity;
+import com.liamahu.bahasaureng.ui.quiz.activity.kata.KataActivity;
 
 public class QuizFragment extends Fragment {
 
