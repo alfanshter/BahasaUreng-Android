@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import com.liamahu.bahasaureng.MainActivity;
 import com.liamahu.bahasaureng.R;
 import com.liamahu.bahasaureng.databinding.FragmentQuizBinding;
+import com.liamahu.bahasaureng.ui.quiz.activity.kalimat.KalimatActivity;
 import com.liamahu.bahasaureng.ui.quiz.activity.kata.KataActivity;
 
 public class QuizFragment extends Fragment {
@@ -41,6 +42,15 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent((requireContext()), KataActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        binding.btnkalimat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent((requireContext()), KalimatActivity.class);
                 startActivity(intent);
 
             }

@@ -4,6 +4,7 @@ package com.liamahu.bahasaureng.webservice;
 import com.liamahu.bahasaureng.model.SoalKataResponse;
 import com.liamahu.bahasaureng.model.jawabpilihanganda.JawabPilihanGandaResponse;
 import com.liamahu.bahasaureng.model.kosakata.KosaKataResponse;
+import com.liamahu.bahasaureng.model.soalkalimat.SoalKalimatResponse;
 
 import java.util.ArrayList;
 
@@ -33,6 +34,10 @@ public interface ApiInterface {
             @Field("jawaban[]") ArrayList<Integer> jawaban,
             @Field("id_pilihanganda[]") ArrayList<Integer> id_pilihanganda
     );
+
+    @GET("kuis_kalimat")
+    Call<SoalKalimatResponse> kuis_kalimat();
+
 
 
 }
