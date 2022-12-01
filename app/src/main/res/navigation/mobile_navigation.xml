@@ -21,5 +21,15 @@
         android:name="com.liamahu.bahasaureng.ui.quiz.QuizFragment"
         android:label="@string/quiz"
         tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/nav_informasi"
+        android:name="com.liamahu.bahasaureng.ui.informasi.InformasiFragment"
+        android:label="@string/informasi"
+        tools:layout="@layout/fragment_informasi" />
+    <fragment
+        android:id="@+id/nav_tentangkami"
+        android:name="com.liamahu.bahasaureng.ui.kontak.KontakKamiFragment"
+        android:label="@string/informasi"
+        tools:layout="@layout/fragment_informasi" />
 
 </navigation>

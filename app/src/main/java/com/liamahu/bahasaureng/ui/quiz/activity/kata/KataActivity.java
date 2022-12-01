@@ -207,29 +207,7 @@ public class KataActivity extends AppCompatActivity {
                              id_jawaban = pilihanganda.get(jumlah_urutan);
                              Picasso.get().load(new Constant().storage + response.body().getData().get(jumlah_urutan).getGambar()).fit().centerCrop().into(binding.imgkata);
 
-                             //jika jumlah soal lebih besar sama dengan 0 DAN jumlah soal kurang dari jumlah maksima soal
-                             //maka tombol next di aktifkan
-                             //jika tidak tombol next di non aktifkan
-                             if (jumlah_urutan >=0 && jumlah_urutan <jumlah_maksimal){
-                                 binding.btnnext.setVisibility(View.VISIBLE);
-                             }else {
-                                 binding.btnnext.setVisibility(View.GONE);
-                             }
-                             //jika jumlah soal sudah melebihi jumlah soal maksimal
-                             // maka tombol proses di nyalakan
-                             if (jumlah_urutan.equals(jumlah_maksimal)){
-                                 binding.btnproses.setVisibility(View.VISIBLE);
-                             }else{
-                                 binding.btnproses.setVisibility(View.GONE);
-                             }
-
-                             if (jumlah_urutan >0){
-                                 binding.btnkembali.setVisibility(View.VISIBLE);
-                             }else {
-                                 binding.btnkembali.setVisibility(View.GONE);
-                             }
-
-                             //pilihan ganda
+                              //pilihan ganda
                              for (final JawabanItem data :  dataItems.get(jumlah_urutan).getJawaban()){
                                  RadioButton rdbtn = new RadioButton(KataActivity.this);
                                  rdbtn.setId(data.getId());

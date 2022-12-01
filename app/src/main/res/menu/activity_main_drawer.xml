@@ -10,12 +10,22 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_kosakata"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/menubook"
             android:title="@string/kosakata" />
         <item
             android:id="@+id/nav_quiz"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/menukuis"
             android:title="@string/quiz" />
+
+        <item
+            android:id="@+id/nav_informasi"
+            android:icon="@drawable/menuinformasi"
+            android:title="@string/informasi" />
+
+        <item
+            android:id="@+id/nav_tentangkami"
+            android:icon="@drawable/menutentangkami"
+            android:title="@string/tentangkami" />
 
     </group>
 </menu>

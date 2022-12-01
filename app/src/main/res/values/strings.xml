@@ -14,4 +14,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="kosakata">Kosa Kata</string>
     <string name="quiz">Quiz</string>
+    <string name="informasi">Informasi Pengguna</string>
+    <string name="tentangkami">Tentang Kami</string>
 </resources>
